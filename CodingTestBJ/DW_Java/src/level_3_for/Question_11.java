@@ -26,14 +26,14 @@ public class Question_11 {
 		BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 		
 		
-		//StringTokenizer st = new StringTokenizer(br.readLine(), " "); // 정수를 입력받는다.
-		String[] strs = br.readLine().split(" "); //백준에서 자꾸 런타임에러(넘버포맷)이 발생해서 알려준 예시대로 다시 작성한 방법
+		StringTokenizer st = new StringTokenizer(br.readLine(), " "); // 정수를 입력받는다.
+		//String[] strs = br.readLine().split(" "); //백준에서 자꾸 런타임에러(넘버포맷)이 발생해서 알려준 예시대로 다시 작성한 방법
 
 		
-		int n = Integer.parseInt(strs[0]); // 입력받은 정수 중, 토큰화되어 담긴 첫번째 숫자, 즉 얼만큼의 크기를 가진 배열을 생성할것인지에 대한 정수를 int n에 대입한다.
-		int x = Integer.parseInt(strs[1]); // 마찬가지로 토큰화 된 숫자중 두번째 숫자, 즉 이 정수보다 작은 애들을 찾기위한 기준점의 정수를 int x에 대입한다.
-		//int n = Integer.parseInt(st.nextToken()); // 백준 런타임에러로 인한 문제점 해결법 이전 내가 적은 코드
-		//int x = Integer.parseInt(st.nextToken()); // 위와 동일
+		//int n = Integer.parseInt(strs[0]); // 입력받은 정수 중, 토큰화되어 담긴 첫번째 숫자, 즉 얼만큼의 크기를 가진 배열을 생성할것인지에 대한 정수를 int n에 대입한다.
+		//int x = Integer.parseInt(strs[1]); // 마찬가지로 토큰화 된 숫자중 두번째 숫자, 즉 이 정수보다 작은 애들을 찾기위한 기준점의 정수를 int x에 대입한다.
+		int n = Integer.parseInt(st.nextToken()); // 백준 런타임에러로 인한 문제점 해결법 이전 내가 적은 코드
+		int x = Integer.parseInt(st.nextToken()); // 위와 동일
 		
 		int[] arr = new int[n]; // 입력받은 n의 값으로 int타입의 배열 arr을 선언하고 n만큼의 크기를 지정해준다.
 		
